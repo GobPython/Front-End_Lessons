@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы в HTML ч.2</title>
+</head>
+<body>
+    <h1>Домашнее задание после урока 16</h1>
+    <h3>
+        1. Создайте форму, в которой должны присутствовать следующие поля:<br>
+        - поля для ввода имени;<br>
+        - поля для ввода фамилии;<br>
+        - поля для ввода возраста;<br>
+        - поля для ввода email;<br>
+        - поля для ввода номера телефона (с валидацией);<br>
+        - поля для указания месяца рождения;<br>
+        - поля для ввода выбора даты со временем.<br>
+        2. Потренируйтесь создать разные типы &ltinput&gt.<br>
+    </h3>
+
+    <form autocomplete="on">
+        <label>Введите имя: <input type="text"></label><br>
+        <label>Введите фамилию: <input type="text"></label><br>
+        <label>Укажите Ваше возраст: <input type="number"></label><br>
+        <label>Укажите Ваш адрес электронной почты: <input type="email"></label><br>
+        <label>Укажите Ваш номер телефона: <input type="tel" pattern="+375 {2}[0-9] {3}[0-9] {2}[0-9] {2}[0-9]" placeholder="+375 12 345 67 89"></label><br>
+        <label>Укажите Ваш месяц рождения: <input type="month"></label><br>
+        <label>Выберите дату и время: <input type="datetime-local"></label><br>
+        <label>Выберите неделю: <input type="week"></label><br>
+        <label>Введите url: <input type="url"></label><br>
+        <label>Что Вы хотите найти: <input type="search"></label>
+    </form>
+
+</body>
+</html>
+
