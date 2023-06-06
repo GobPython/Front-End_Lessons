@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы в HTML ч.3</title>
+</head>
+<body>
+    <h1>Домашнее задание после урока 17</h1>
+    <h3>
+Создайте анкету для пользователя.<br>
+1. Создайте чекбоксы:<br>
+- выбрать любимые жанры кино;<br>
+- выбрать любимые цвета;<br>
+- выбрать любимое блюдо.<br>
+2. Создайте радиокнопки:<br>
+- выбрать страну проживания;<br>
+- выбрать семейное положение;<br>
+- выбрать тип занятости (студент, работающий, безработный).<br>
+Для всех &ltinput&gt необходимо добавить подпись с помощью &ltlabel&gt. Объединить &ltinput&gt из одной категории (выбор жанра, выбор цвета, выбор семейного положения и т.д.) с помощью &ltfieldset&gt.
+    </h3>
+    <h3>1. Выберите Ваши предпочтения.</h3>
+
+    <form>
+
+        <fieldset>
+            <legend>Укажите Ваши любимые жанры кино:</legend>
+            <input id="triller" type="checkbox" name="triller" value="likes">
+            <label for="triller">Триллеры</label><br>
+            <input id="comedy" type="checkbox" name="comedy" value="likes">
+            <label for="comedy">Комедии</label><br>
+            <input id="science" type="checkbox" name="science" value="likes">
+            <label for="science">Фантастика</label><br>
+            <input id="adventures" type="checkbox" name="adventures" value="likes">
+            <label for="adventures">Приключения</label><br>
+            <input id="otherfilm" type="checkbox" name="otherfilm" value="likes">
+            <label for="otherfilm">Другие</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Укажите Ваши любимые цвета:</legend>
+            <input id="red" type="checkbox" name="red" value="colors">
+            <label for="red">Красынй</label><br>
+            <input id="green" type="checkbox" name="green" value="colors">
+            <label for="green">Зелёный</label><br>
+            <input id="blue" type="checkbox" name="blue" value="colors">
+            <label for="blue">Голубой</label><br>
+            <input id="othercolor" type="checkbox" name="othercolor" value="colors">
+            <label for="othercolor">Другой</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Укажите Ваши любимые бюда:</legend>
+            <input id="beans" type="checkbox" name="beans" value="dishes">
+            <label for="beans">Оливье</label><br>
+            <input id="fish" type="checkbox" name="fish" value="dishes">
+            <label for="fish">Селёдка под шубой</label><br>
+            <input id="potato" type="checkbox" name="potato" value="dishes">
+            <label for="potato">Картофель, запечённый по-деревенски</label><br>
+            <input id="otherdish" type="checkbox" name="otherdish" value="dishes">
+            <label for="otherdish">Другие</label>
+        </fieldset>
+
+        <br><input type="submit" value="Подтвердить введенные данные">
+    </form>
+
+    <h3>2. Заполните данные о стране проживания, семейном положении и текущем рабочем статусе.</h3>
+    <form>
+        <p>Выберите страну проживания:<br>
+            <input id="bel" type="radio" name="country" value="bel">
+            <label for="bel">Беларусь</label><br>
+            <input id="rus" type="radio" name="country" value="rus">
+            <label for="rus">Россия</label><br>
+            <input id="kaz" type="radio" name="country" value="kaz">
+            <label for="kaz">Казахстан</label><br>
+        </p>
+        <p>Укажите Ваше семейное положение:<br>
+            <input id="out" type="radio" name="status" value="out">
+            <label for="out">Холост/Не замужем</label><br>
+            <input id="in" type="radio" name="status" value="in">
+            <label for="in">Женат/Замужем</label><br>
+            <input id="outplus" type="radio" name="status" value="outplus">
+            <label for="outplus">Разведен/Разведена</label><br>
+            <input id="finalout" type="radio" name="status" value="finalout">
+            <label for="finalout">Вдовец/вдова</label><br>
+        </p>
+
+
+
+        <p>Выберите текущий статус:<br>
+            <input id="student" type="radio" name="work" value="student">
+            <label for="student">Студент</label><br>
+            <input id="rabota" type="radio" name="work" value="rabota">
+            <label for="rabota">Работаю</label><br>
+            <input id="bez_rabota" type="radio" name="work" value="bez_rabota">
+            <label for="bez_rabota">Безработный</label><br>
+        </p>
+        <input type="submit" value="Подтвердить введенные данные">
+    </form>
+
+</body>
+</html>
+
