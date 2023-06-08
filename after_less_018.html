@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы в HTML ч.4</title>
+</head>
+<body>
+    <h1>Домашнее задание после урока 18</h1>
+    <h3>
+1. Создайте выпадающий список со списком стран, в данном списке должны присутствовать страны с разных континентов. Для того чтобы сгруппировать данные элементы, используйте тег &ltoptgroup&gt<br>
+2. Из данного списка стран пользователь должен выбрать страны, в которых он хочет побывать. Для этого необходимо позволить пользователю делать множественный выбор<br>
+3. Необходимо добавить подпись для выпадающего списка с помощью &ltlabel&gt<br>
+4. Ниже добавьте поля для текста, где пользователь должен написать, почему он выбрал эти страны. Для данного тега также необходимо добавить подпись, которая сообщает, для чего предназначается данный элемент<br>
+5. Все эти элементы должны быть заключены в &ltform&gt и иметь кнопку для отправки<br>
+
+    </h3>
+    <form action="#">
+        <label for="liked_countries">Выберите страны, в которых Вы хотите побывать.<br>Чтобы выбрать несколько стран надо удерживать нажатой клавишу Shift или Ctr (зависит от браузера) и выбирать страны мышкой.</label><br>
+            <select name="contries" id="liked_countries" multiple required size="25">
+                <optgroup label="Европа">
+                    <option value="belarus">Беларусь</option>
+                    <option value="poland">Польша</option>
+                    <option value="france">Франция</option>
+                    <option value="spain">Испания</option>
+                </optgroup>
+                <optgroup label="Северная Америка">
+                    <option value="usa">США</option>
+                    <option value="canada">Канада</option>
+                    <option value="mexico">Мексика</option>
+                </optgroup>
+                <optgroup label="Южная Америка">
+                    <option value="brazil">Бразилия</option>
+                    <option value="peru">Перу</option>
+                    <option value="columbia">Колумбия</option>
+                    <option value="argentina">Аргентина</option>
+                </optgroup>
+                <optgroup label="Азия">
+                    <option value="vietnam">Вьетнам</option>
+                    <option value="india">Индия</option>
+                    <option value="tailand">Тайланд</option>
+                    <option value="afganistan">Афганистан</option>
+                </optgroup>
+                <optgroup label="Африка">
+                    <option value="egipt">Египет</option>
+                    <option value="nigeria">Нигерия</option>
+                    <option value="uar">ЮАР</option>
+                    <option value="angola">Ангола</option>
+                </optgroup>
+            </select>
+        <br><textarea placeholder="Опишите, почему Вы хоитие посетить выбранные страны" cols="50" rows="15" required></textarea><br>
+        <input type="submit" value="Отправить данные">
+    </form>
+
+</body>
+</html>
+
