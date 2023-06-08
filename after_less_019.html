@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Атрибуты элементов формы</title>
+</head>
+<body>
+    <h1>Домашнее задание после урока 19</h1>
+    <h3>
+        Создайте форму. Внутри неё должны находиться следующие поля:<br>
+        - Инпут для ввода имени, данное поле обязательно должно быть заполнено. Используйте placeholder, чтобы сообщить пользователю, какие данные он должен ввести в данное поле<br>
+        - Инпут для ввода возраста. Минимальное значение, которое пользователь может ввести в данную форму, равно 6, максимальное - 100. Используйте placeholder, чтобы сообщить пользователю, какие данные он должен ввести в данное поле<br>
+        - Радиокнопки, где пользователь выбирает своё семейное положение. Данные радиокнопки объедините с помощью &ltfieldset&gt<br>
+        - Инпут, который имеет доступ только для чтения и имеет значение = ‘это значение отправляется с формой’. &lttextarea&gt, максимальное количество символов, которое пользователь может ввести в это поле, равно 300<br>
+        - Добавить кнопку для отправки формы.
+    </h3>
+    <form action="#">
+        <p>Как Вас зовут? <input type="text" name="name" placeholder="Введите Ваше имя" required></p>
+        <p>Какой у Вас возраст? <input type="number" name="number" max="100" min="6" required placeholder="6 - 100"></p>
+        <fieldset>
+            <p>Укажите Ваше семейное положение:<br>
+                <input id="out" type="radio" name="status" value="out">
+                <label for="out">Холост/Не замужем</label><br>
+                <input id="in" type="radio" name="status" value="in">
+                <label for="in">Женат/Замужем</label><br>
+                <input id="outplus" type="radio" name="status" value="outplus">
+                <label for="outplus">Разведен/Разведена</label><br>
+                <input id="finalout" type="radio" name="status" value="finalout">
+                <label for="finalout">Вдовец/вдова</label><br>
+            </p>
+        </fieldset>
+        <input type="text" readonly value="Это значение отправляется с формой" size="30"><br>
+        <textarea maxlength="300" placeholder="Максимум 300 символов"></textarea><br>
+        <input type="submit" value="Отправить форму">
+    </form>
+</body>
+</html>
+
