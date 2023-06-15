@@ -1,0 +1,21 @@
+* {
+    font-size: 20px;
+}
+
+#b1 {
+    color: green;
+}
+
+.a1 {
+    color: brown;
+    font-weight: bold;
+}
+
+div p {
+    color: orange;
+}
+
+div+a {
+    font-size: 30px;
+    color: aqua;
+}
